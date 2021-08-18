@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.accessPoint.AccessPointFragment">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_room_mapper"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add New Room"
+        android:layout_margin="@dimen/margin_10"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_show_rooms"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Rooms"
+        android:layout_margin="@dimen/margin_10"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_locate_me"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Locate Me"
+        android:layout_margin="@dimen/margin_10"/>
+
+    <androidx.core.widget.ContentLoadingProgressBar
+        android:id="@+id/progress_circular"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="visible"
+        android:layout_marginTop="@dimen/margin_55"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_access_points"
+        style="@style/scrollbarStyleVertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/margin_35"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_access_points" />
+
+</LinearLayout>

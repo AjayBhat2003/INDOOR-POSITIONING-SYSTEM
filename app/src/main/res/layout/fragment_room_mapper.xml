@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.roomMapper.RoomMapperFragment">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_25"
+        android:background="@drawable/bg_dotted_box">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/select_ap_1"
+            style="@style/ButtonStyle"
+            android:layout_width="@dimen/margin_150"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|left"
+            android:drawableStart="@drawable/ic_add_circle_black_24dp"
+            android:drawablePadding="@dimen/margin_2"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="AP 1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/select_ap_2"
+            style="@style/ButtonStyle"
+            android:layout_width="@dimen/margin_150"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:drawableStart="@drawable/ic_add_circle_black_24dp"
+            android:drawablePadding="@dimen/margin_2"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="AP 2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/select_ap_3"
+            style="@style/ButtonStyle"
+            android:layout_width="@dimen/margin_150"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:drawableStart="@drawable/ic_add_circle_black_24dp"
+            android:drawablePadding="@dimen/margin_2"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="AP 3" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/select_ap_4"
+            style="@style/ButtonStyle"
+            android:layout_width="@dimen/margin_150"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:drawableStart="@drawable/ic_add_circle_black_24dp"
+            android:drawablePadding="@dimen/margin_2"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="AP 4" />
+
+        <FrameLayout
+            android:layout_width="@dimen/margin_10"
+            android:layout_height="@dimen/margin_10"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_button_blue" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_35"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:padding="@dimen/margin_10"
+            android:weightSum="1">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edit_room_name"
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:layout_height="wrap_content"
+                android:hint="Enter Room Name" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_save_room_info"
+                style="@style/ButtonStyle"
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_height="@dimen/margin_45"
+                android:drawableLeft="@drawable/ic_done_black_24dp"
+                android:text="Done" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</FrameLayout>

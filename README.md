@@ -1,5 +1,5 @@
 # INDOOR-POSITIONING-SYSTEM
-# Welcome to the INDOOR-POSITIONING-SYSTEM wiki!
+
 Jetpack Navigation is used
 Written in Kotlin
 Room DAO used for Database
